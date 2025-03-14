@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DP Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="white.png" alt="Logo" width="50px">
+            </div>
+            <div class="site-name">
+                <h1 id="mfm">MFMCF</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <p><span class="black-text">Invite your friends for</span></p>
+        <h2>Single's Week Program 2025</h2>
+        <p><span class="black-text">purchase your Single's Week ticket</span></p>
+        
+        <h5>It is super easy to get it immediately!</h5>
+        
+        <div class="form-container">
+            <input style="color: black; font-family: cursive;" type="text" id="name" placeholder="Name" >
+            <input style="color: black; font-family: cursive;" type="text" id="department" placeholder="Department">
+            <input style="color: black; font-family: cursive;" type="text" ids="level" placeholder="Level">
+            <!-- <input type="file" id="imageUpload" accept="image/*">
+            <div class="image-preview">
+                <img id="selectedImage" src="" alt="Selected Image">
+            </div>
+            <input type="range" id="imageSize" min="10" max="200" value="100"> -->
+            <select id="status">
+                <option value="text">Select package</option>
+                <option value="Employed">Single - 1500</option>
+                <option value="Unemployed">Couple - 2500</option>
+                <option value="Student">5 per table - 5000</option>
+                <option value="Student">10 per table - 10000</option>
+              </select>
+            <button id="generateButton" onclick="nextPage()">Proceed to payment</button>
+        </div>
+        
+        <div class="preview-container" id="previewContainer" style="display:none;">
+            <div class="preview-content" id="previewContent"></div>
+            <button id="downloadButton">Download Image</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
