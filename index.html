@@ -26,20 +26,18 @@
         <h5>It is super easy to get it immediately!</h5>
         
         <div class="form-container">
-            <input style="color: black; font-family: cursive;" type="text" id="name" placeholder="Name" >
-            <input style="color: black; font-family: cursive;" type="text" id="department" placeholder="Department">
-            <input style="color: black; font-family: cursive;" type="text" ids="level" placeholder="Level">
+            <input style="color: black; font-family: cursive;" type="text" id="name" placeholder="Name" required >
+            <input style="color: black; font-family: cursive;" type="text" id="department" placeholder="Department" required>
+            <input style="color: black; font-family: cursive;" type="text" ids="level" placeholder="Level" required>
             <!-- <input type="file" id="imageUpload" accept="image/*">
             <div class="image-preview">
                 <img id="selectedImage" src="" alt="Selected Image">
             </div>
             <input type="range" id="imageSize" min="10" max="200" value="100"> -->
-            <select id="status">
+            <select id="status" required>
                 <option value="text">Select package</option>
                 <option value="Employed">Single - 1500</option>
                 <option value="Unemployed">Couple - 2500</option>
-                <option value="Student">5 per table - 5000</option>
-                <option value="Student">10 per table - 10000</option>
               </select>
             <button id="generateButton" onclick="nextPage()">Proceed to payment</button>
         </div>
