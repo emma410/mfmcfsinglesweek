@@ -44,7 +44,7 @@ main {
 }
 
 .form-container input[type="text"],
-.form-container input[type="file"] {
+.form-container input[type="email"] {
     width: calc(100% - 20px);
     padding: 10px;
     margin: 10px 0;
