@@ -34,7 +34,8 @@ main {
 }
 
 .form-container {
-    background-color: #ffffff;
+    background-image: url('sws.png'); 
+    background-size: cover;
     padding: 20px;
     margin: 20px auto;
     border-radius: 10px;
